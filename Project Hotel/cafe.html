@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Glykatzis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FAF3E0;
+            color: #5C3D2E;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #E8C1C5;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .menu, .specials, .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .item {
+            background-color: #F5E6CA;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px;
+            width: 200px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .item h2 {
+            color: #8B5E3C;
+            position: absolute;
+            bottom: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 0 0 10px 10px;
+        }
+        .specials, .contact {
+            background-color: #E8C1C5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            
+        }
+        .contact{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Café Glykatzis</h1>
+        <p>Serving the best brownies, cakes, cookies, shakes, and coffee!</p>
+    </header>
+    
+    <section class="menu">
+        <div class="item">
+            <img src="brownie.jpg" alt="Brownies">
+            <h2>Brownies</h2>
+        </div>
+        <div class="item">
+            <img src="cake.jpg" alt="Cakes">
+            <h2>Cakes</h2>
+        </div>
+        <div class="item">
+            <img src="cookiee.jpg" alt="Cookies">
+            <h2>Cookies</h2>
+        </div>
+        <div class="item">
+            <img src="bun.jpg" alt="Garlic Bun">
+            <h2>Garlic Bun</h2>
+        </div>
+        <div class="item">
+            <img src="donut.jpg" alt="Donut">
+            <h2>Donut</h2>
+        </div>
+        <div class="item">
+            <img src="muffins.jpg" alt="Muffins">
+            <h2>Muffins</h2>
+        </div>
+        <div class="item">
+            <img src="coffee.jpg" alt="Coffee">
+            <h2>Coffee</h2>
+        </div>
+    </section>
+    
+    <section class="specials">
+        <h2>Today's Specials</h2>
+        <p>Try our delicious Red Velvet Cake and Hazelnut Latte!</p>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Location: Shop 5, Highland Gardens, Thane  </p>
+        <p>Phone: +123 456 7890</p>
+        <p>Email: contact@cafeglykatzis.com</p>
+    </section>
+</body>
+</html>
