@@ -20,6 +20,45 @@
             align-items: center;
             border: 1px solid black;
         }
+        .layout{
+            background-color: aqua;
+            font-size: 20px;
+            display: grid;
+            padding: 10px;
+            border: 1px solid black;
+            grid-template-areas: 'top top top'
+            'nav content sidebar'
+            'nav footer footer';
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 50px 1fr 50px;
+            height: 50vh;
+            width: 50vh;
+            box-sizing: border-box;
+        }
+        header{
+            grid-area: top;
+        
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: content;
+        }
+        footer{
+            grid-area: footer;
+        }
+        aside{
+            grid-area: sidebar;
+        }
+        Header,nav,Main,aside,footer{
+            background-color: rgb(221, 255, 0);
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+
     </style>
 </head>
 <body>
@@ -31,5 +70,19 @@
     <div class="item">5</div>
     <div class="item">6</div>
     </div>
+    <br>
+    <br>
+
+    <div class="layout">
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <main>Content</main>
+    <aside>sidebar</aside>
+    <footer>Footer</footer>
+    </div>
+
+
+
+
 </body>
 </html>
