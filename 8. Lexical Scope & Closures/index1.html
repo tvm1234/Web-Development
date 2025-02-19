@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Simple JS Website</h1>
+    <p>Enter your name below:</p>
+    <input type="text" id="nameInput" placeholder="Your Name">
+    <button onclick="greetUser()">Submit</button>
+    <h2 id="greeting"></h2>
+
+    <script>
+        function greetUser() {
+            const name = document.getElementById("nameInput").value;
+            const greetingElement = document.getElementById("greeting");
+            if (name) {
+                greetingElement.textContent = `Hello, ${name}! Welcome to my website.`;
+            } else {
+                greetingElement.textContent = "Please enter your name.";
+            }
+        }
+    </script>
+</body>
+</html>
