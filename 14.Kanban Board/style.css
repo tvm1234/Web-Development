@@ -145,7 +145,7 @@ body {
     flex-direction: column;
     background: #4b4b4b;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .priority-color {
